@@ -1,3 +1,3 @@
 Tour of Marist Campus - by Michael Laffan
 
-In this program, I will be simulating a tour of Marist College. The tour will include ten places that are available to visit. The places will be the Student Center, Donnelly Hall, Hancock Center, McCann Center, the Cannavino Library, the Chapel, McCormick Hall, Steel Plant Studios and Gallery, Science and Allied Health Building, and the Dyson Center. Please enjoy the tour.
+In this program, I will be simulating a tour of Marist College. The tour will include ten places that are available to visit. The places will be the Student Center, Donnelly Hall, Hancock Center, McCann Center, the Cannavino Library, the Chapel, McCormick Hall, Steel Plant Studios and Gallery, Science and Allied Health Building, and the Dyson Center. I will also be giving descriptions about each one and what's included in them. Please enjoy the tour.
