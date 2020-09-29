@@ -26,7 +26,15 @@ def main():
     input("Press the enter key to go to the next location: ")
     #Location 3 - Hancock Center
     print()
-    
+    print("Our next location here is the Hancock Center. This location is")
+    print("for our School of Computer Science and Mathematics. However, it also")
+    print("houses our Study Abroad offices, which manages our programs for students")
+    print("who want to go and study in another country, such as our campus in")
+    print("Florence, Italy. It also houses our Investment Center and Trading Room")
+    print("and our Center for Teaching Excellence.")
+    input("Press the enter key to go to the next location: ")
+    #Location 4 - McCann Center
+    print()
 
 
 
