@@ -93,6 +93,16 @@ def main():
     #Location 10 - Dyson Center
     print()
     print("Dyson Center")
+    print("Our last location that I will be showing you here at Marist College")
+    print("is the Dyson Center. This building houses our School of Management")
+    print("and School of Social and Behavioral Sciences. It also houses our")
+    print("Teacher Education Program for any students that wish to pursue a")
+    print("career in teaching and it also has a coffee shop.")
+    input("Press the enter key to end the tour: ")
+    #Closing
+    print()
+    print("Thank you everyone for visiting Marist College. I hope you enjoyed")
+    print("the tour and consider applying to Marist College. Goodbye!")
     
 
 
