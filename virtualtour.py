@@ -10,7 +10,22 @@ def main():
     print()
     print("Murray Student Center")
     print("Our first location here is the Murray Student Center. This location")
-    print("serves as the center point of the college.")
+    print("serves as the center point of the college. It brings together all")
+    print("the members of Marist College. It provides various student services")
+    print("and serves as a place where students can meet and organize events.")
+    print("Some of these services include dining services, student lounge,")
+    print("the campus post office, and the campus bookstore.")
+    input("Press the enter key to go to the next location: ")
+    #Location 2 - Donnelly Hall
+    print()
+    print("Our next location here is Donnelly Hall. This location mainly houses")
+    print("our technology services and other offices that are available to")
+    print("our students here on campus. Some of these services include")
+    print("Financial services, the Help Desk, Advising and Academic Services")
+    print("and the Computer Lab.")
+    input("Press the enter key to go to the next location: ")
+    #Location 3 - Hancock Center
+    print()
     
 
 
