@@ -75,6 +75,24 @@ def main():
     #Location 8 - Steel Plant Studios and Gallery
     print()
     print("Steel Plant Studios and Gallery")
+    print("Our next location is the Steel Plant Studios and Gallery, commonly")
+    print("known as the Steel Plant. This building mainly houses our fashion")
+    print("and design programs that we have available here on campus. It also")
+    print("houses our Art Gallery and our Digital Media and Fine Arts programs")
+    print("here as well.")
+    input("Press the enter key to go to the next location: ")
+    #Location 9 - Science and Allied Health Building
+    print()
+    print("Science and Allied Health Building")
+    print("Our next location here is the Science and Allied Health Building.")
+    print("This building mainly houses our science and medical field programs.")
+    print("It also houses our School of Science and our labratories such as the")
+    print("Cognitive Computing Lab and Gross Anatomy Lab. Anyone interested in")
+    print("the medical field will likely take most of their classes here.")
+    input("Press the enter key to go to the last location: ")
+    #Location 10 - Dyson Center
+    print()
+    print("Dyson Center")
     
 
 
