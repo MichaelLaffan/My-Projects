@@ -56,6 +56,25 @@ def main():
     #Location #6 - The Chapel
     print()
     print("The Chapel")
+    print("Our next location here is the Chapel. The Chapel serves as an")
+    print("Inter-Faith Prayer room, where anyone can come in for quiet")
+    print("prayer from 7 am to 10 pm. It also provides Mass services")
+    print("Monday through Thursday at 12:15 pm and on Sundays at both")
+    print("12 pm and 6:30 pm.")
+    input("Press the enter key to go to the next location: ")
+    #Location #7 - McCormick Hall
+    print()
+    print("McCormick Hall")
+    print("Our next location here is McCormick Hall. This location serves as a")
+    print("residence hall for our upperclassmen. Unlike the freshman residence")
+    print("halls we have here on campus, residents of this hall are responsible")
+    print("for their own cooking and cleaning of their apartment. This location")
+    print("also serves as one of our dining locations here on campus, also")
+    print("known as North End Dining.")
+    input("Press the enter key to go to the next location: ")
+    #Location 8 - Steel Plant Studios and Gallery
+    print()
+    print("Steel Plant Studios and Gallery")
     
 
 
