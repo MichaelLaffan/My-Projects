@@ -1,6 +1,7 @@
 # main function
 def main():
     #Title and Introduction
+    count = 0
     i1 = "Marist Virtual Tour" 
     i2 = "Hello everyone! Welcome to Marist College. I'll be your tour guide as I show you some of our locations here on campus. Enjoy the tour."
     i3 = "Press the enter key to begin the tour: "
@@ -21,6 +22,7 @@ the campus post office, and the campus bookstore.''')
     print(s1)
     print(s2)
     print(input(s3))
+    count = count + 1
     
     #Location 2 - Donnelly Hall
     print()
@@ -34,6 +36,7 @@ and the Computer Lab.''')
     print(d1)
     print(d2)
     print(input(d3))
+    count = count + 1
     
     #Location 3 - Hancock Center
     print()
@@ -48,6 +51,7 @@ and our Center for Teaching Excellence.''')
     print(h1)
     print(h2)
     print(input(h3))
+    count = count + 1
     
     #Location 4 - McCann Center
     print()
@@ -61,6 +65,7 @@ for people who come to visit our campus.''')
     print(m1)
     print(m2)
     print(input(m3))
+    count = count + 1
     
     #Location #5 - Cannavino Library
     print()
@@ -74,6 +79,7 @@ Affairs, and our Digital Education services.''')
     print(c1)
     print(c2)
     print(input(c3))
+    count = count + 1
     
     #Location #6 - The Chapel
     print()
@@ -87,6 +93,7 @@ Monday through Thursday at 12:15 pm and on Sundays at both
     print(ch1)
     print(ch2)
     print(input(ch3))
+    count = count + 1
     
     #Location #7 - McCormick Hall
     print()
@@ -101,6 +108,7 @@ known as North End Dining.''')
     print(mc1)
     print(mc2)
     print(input(mc3))
+    count = count + 1
     
     #Location 8 - Steel Plant Studios and Gallery
     print()
@@ -114,6 +122,7 @@ here as well.''')
     print(sp1)
     print(sp2)
     print(input(sp3))
+    count = count + 1
     
     #Location 9 - Science and Allied Health Building
     print()
@@ -127,6 +136,7 @@ the medical field will likely take most of their classes here.''')
     print(sc1)
     print(sc2)
     print(input(sc3))
+    count = count + 1
     
     #Location 10 - Dyson Center
     print()
@@ -140,9 +150,11 @@ career in teaching and it also has a coffee shop.''')
     print(dy1)
     print(dy2)
     print(input(dy3))
+    count = count + 1
     
     #Closing
     print()
+    print("You have visited", count, "locations.")
     cl = ('''Thank you everyone for visiting Marist College. I hope you enjoyed
 the tour and consider applying to Marist College. Goodbye!''')
     print(cl)
