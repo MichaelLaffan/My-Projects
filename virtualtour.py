@@ -18,6 +18,7 @@ def main():
     input("Press the enter key to go to the next location: ")
     #Location 2 - Donnelly Hall
     print()
+    print("Donnelly Hall")
     print("Our next location here is Donnelly Hall. This location mainly houses")
     print("our technology services and other offices that are available to")
     print("our students here on campus. Some of these services include")
@@ -26,6 +27,7 @@ def main():
     input("Press the enter key to go to the next location: ")
     #Location 3 - Hancock Center
     print()
+    print("Hancock Center")
     print("Our next location here is the Hancock Center. This location is")
     print("for our School of Computer Science and Mathematics. However, it also")
     print("houses our Study Abroad offices, which manages our programs for students")
@@ -35,7 +37,26 @@ def main():
     input("Press the enter key to go to the next location: ")
     #Location 4 - McCann Center
     print()
-
+    print("McCann Center")
+    print("Our next location here is the McCann Center. This location is mostly")
+    print("known to be our sports center here on campus. It houses our Athletic")
+    print("Department, our fitness center, our Center for Sports Medicine, and")
+    print("other sports services. It also houses our Admissions Visitor Center")
+    print("for people who come to visit our campus.")
+    input("Press the enter key to go to the next location: ")
+    #Location #5 - Cannavino Library
+    print()
+    print("Cannavino Library")
+    print("Our next location here is the Cannavino Library. This location serves")
+    print("as our main library here on campus. It also serves as a place where")
+    print("students can catch up on their work and study without any distractions.")
+    print("It also houses our Center for Career Services, Center for Multicultural")
+    print("Affairs, and our Digital Education services.")
+    input("Press the enter key to go to the next location: ")
+    #Location #6 - The Chapel
+    print()
+    print("The Chapel")
+    
 
 
 main()
