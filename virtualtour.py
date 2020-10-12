@@ -67,9 +67,12 @@ care in a variety of settings such as in the operating and emergency room.'''), 
 Adolescence Education program, Special Education program, and M.A.s in Education
 Psychology and Initial Teaching Certification.''')]
 
+locations = 0
+count = 0
 def main():
     #Title and Introduction
-    count = 0
+    global locations
+    global count
     i1 = "Marist Virtual Tour" 
     i2 = "Hello everyone! Welcome to Marist College. I'll be your tour guide as I show you some of our locations here on campus. Enjoy the tour."
     i3 = "Press the enter key to begin the tour: "
@@ -83,11 +86,12 @@ def main():
     s2 = "Press the enter key for information on the dorms next to the Student Center: "
     s3 = "Press the enter key to go to the next location: "
     print(s1)
-    print(descriptions[0])
+    print(descriptions[locations])
     print(input(s2))
-    print(details[0])
+    print(details[locations])
     print(input(s3))
     count = count + 1
+    locations = locations + 1
     
     #Location 2 - Donnelly Hall
     print()
@@ -95,11 +99,12 @@ def main():
     d2 = "Press the enter key for a list of the other services: "
     d3 = "Press the enter key to go to the next location: "
     print(d1)
-    print(descriptions[1])
+    print(descriptions[locations])
     print(input(d2))
-    print(details[1])
+    print(details[locations])
     print(input(d3))
     count = count + 1
+    locations = locations + 1
     
     #Location 3 - Hancock Center
     print()
@@ -107,11 +112,12 @@ def main():
     h2 = "Press the enter key for a list of some of our Study Abroad locations: "
     h3 = "Press the enter key to go to the next location: "
     print(h1)
-    print(descriptions[2])
+    print(descriptions[locations])
     print(input(h2))
-    print(details[2])
+    print(details[locations])
     print(input(h3))
     count = count + 1
+    locations = locations + 1
     
     #Location 4 - McCann Center
     print()
@@ -119,11 +125,12 @@ def main():
     m2 = "Press the enter key for a list sports we have here: "
     m3 = "Press the enter key to go to the next location: "
     print(m1)
-    print(descriptions[3])
+    print(descriptions[locations])
     print(input(m2))
-    print(details[3])
+    print(details[locations])
     print(input(m3))
     count = count + 1
+    locations = locations + 1
     
     #Location #5 - Cannavino Library
     print()
@@ -131,11 +138,12 @@ def main():
     c2 = "Press the enter key for information on the digital library: "
     c3 = "Press the enter key to go to the next location: "
     print(c1)
-    print(descriptions[4])
+    print(descriptions[locations])
     print(input(c2))
-    print(details[4])
+    print(details[locations])
     print(input(c3))
     count = count + 1
+    locations = locations + 1
     
     #Location #6 - The Chapel
     print()
@@ -143,11 +151,12 @@ def main():
     ch2 = "Press the enter key for information on our spirit groups: "
     ch3 = "Press the enter key to go to the next location: "
     print(ch1)
-    print(descriptions[5])
+    print(descriptions[locations])
     print(input(ch2))
-    print(details[5])
+    print(details[locations])
     print(input(ch3))
     count = count + 1
+    locations = locations + 1
     
     #Location #7 - McCormick Hall
     print()
@@ -155,11 +164,12 @@ def main():
     mc2 = "Press the enter key for a list of our food options: "
     mc3 = "Press the enter key to go to the next location: "
     print(mc1)
-    print(descriptions[6])
+    print(descriptions[locations])
     print(input(mc2))
-    print(details[6])
+    print(details[locations])
     print(input(mc3))
     count = count + 1
+    locations = locations + 1
     
     #Location 8 - Steel Plant Studios and Gallery
     print()
@@ -167,11 +177,12 @@ def main():
     sp2 = "Press the enter key for more information on the Art Gallery: "
     sp3 = "Press the enter key to go to the next location: "
     print(sp1)
-    print(descriptions[7])
+    print(descriptions[locations])
     print(input(sp2))
-    print(details[7])
+    print(details[locations])
     print(input(sp3))
     count = count + 1
+    locations = locations + 1
     
     #Location 9 - Science and Allied Health Building
     print()
@@ -179,11 +190,12 @@ def main():
     sc2 = "Press the enter key for information on our Physician Assist Program: "
     sc3 = "Press the enter key to go to the last location: "
     print(sc1)
-    print(descriptions[8])
+    print(descriptions[locations])
     print(input(sc2))
-    print(details[8])
+    print(details[locations])
     print(input(sc3))
     count = count + 1
+    locations = locations + 1
     
     #Location 10 - Dyson Center
     print()
@@ -191,9 +203,9 @@ def main():
     dy2 = "Press the enter key for a list of our teacher education programs: "
     dy3 = "Press the enter key to end the tour: "
     print(dy1)
-    print(descriptions[9])
+    print(descriptions[locations])
     print(input(dy2))
-    print(details[9])
+    print(details[locations])
     print(input(dy3))
     count = count + 1
     
