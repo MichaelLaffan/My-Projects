@@ -69,10 +69,15 @@ Psychology and Initial Teaching Certification.''')]
 
 locations = 0
 count = 0
-def main():
-    #Title and Introduction
+def visit(x):
     global locations
     global count
+    locations = x
+    count = count + 1
+def main():
+    global locations
+    global count
+    #Title and Introduction
     i1 = "Marist Virtual Tour" 
     i2 = "Hello everyone! Welcome to Marist College. I'll be your tour guide as I show you some of our locations here on campus. Enjoy the tour."
     i3 = "Press the enter key to begin the tour: "
@@ -81,6 +86,7 @@ def main():
     print(input(i3))
     
     #Location 1 - Student Center
+    visit(0)
     print()
     s1 = "Murray Student Center"
     s2 = "Press the enter key for information on the dorms next to the Student Center: "
@@ -90,10 +96,9 @@ def main():
     print(input(s2))
     print(details[locations])
     print(input(s3))
-    count = count + 1
-    locations = locations + 1
     
     #Location 2 - Donnelly Hall
+    visit(1)
     print()
     d1 = "Donnelly Hall"
     d2 = "Press the enter key for a list of the other services: "
@@ -103,10 +108,9 @@ def main():
     print(input(d2))
     print(details[locations])
     print(input(d3))
-    count = count + 1
-    locations = locations + 1
     
     #Location 3 - Hancock Center
+    visit(2)
     print()
     h1 = "Hancock Center"
     h2 = "Press the enter key for a list of some of our Study Abroad locations: "
@@ -116,10 +120,9 @@ def main():
     print(input(h2))
     print(details[locations])
     print(input(h3))
-    count = count + 1
-    locations = locations + 1
     
     #Location 4 - McCann Center
+    visit(3)
     print()
     m1 = "McCann Center"
     m2 = "Press the enter key for a list sports we have here: "
@@ -129,10 +132,9 @@ def main():
     print(input(m2))
     print(details[locations])
     print(input(m3))
-    count = count + 1
-    locations = locations + 1
     
     #Location #5 - Cannavino Library
+    visit(4)
     print()
     c1 = "Cannavino Library"
     c2 = "Press the enter key for information on the digital library: "
@@ -142,10 +144,9 @@ def main():
     print(input(c2))
     print(details[locations])
     print(input(c3))
-    count = count + 1
-    locations = locations + 1
     
     #Location #6 - The Chapel
+    visit(5)
     print()
     ch1 = "The Chapel"
     ch2 = "Press the enter key for information on our spirit groups: "
@@ -155,10 +156,9 @@ def main():
     print(input(ch2))
     print(details[locations])
     print(input(ch3))
-    count = count + 1
-    locations = locations + 1
     
     #Location #7 - McCormick Hall
+    visit(6)
     print()
     mc1 = "McCormick Hall"
     mc2 = "Press the enter key for a list of our food options: "
@@ -168,10 +168,9 @@ def main():
     print(input(mc2))
     print(details[locations])
     print(input(mc3))
-    count = count + 1
-    locations = locations + 1
     
     #Location 8 - Steel Plant Studios and Gallery
+    visit(7)
     print()
     sp1 = "Steel Plant Studios and Gallery"
     sp2 = "Press the enter key for more information on the Art Gallery: "
@@ -181,10 +180,9 @@ def main():
     print(input(sp2))
     print(details[locations])
     print(input(sp3))
-    count = count + 1
-    locations = locations + 1
     
     #Location 9 - Science and Allied Health Building
+    visit(8)
     print()
     sc1 = "Science and Allied Health Building"
     sc2 = "Press the enter key for information on our Physician Assist Program: "
@@ -194,10 +192,9 @@ def main():
     print(input(sc2))
     print(details[locations])
     print(input(sc3))
-    count = count + 1
-    locations = locations + 1
     
     #Location 10 - Dyson Center
+    visit(9)
     print()
     dy1 = "Dyson Center"
     dy2 = "Press the enter key for a list of our teacher education programs: "
@@ -207,7 +204,6 @@ def main():
     print(input(dy2))
     print(details[locations])
     print(input(dy3))
-    count = count + 1
     
     #Closing
     print()
