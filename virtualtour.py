@@ -67,150 +67,153 @@ care in a variety of settings such as in the operating and emergency room.'''), 
 Adolescence Education program, Special Education program, and M.A.s in Education
 Psychology and Initial Teaching Certification.''')]
 
+places = ["Murray Student Center", "Donnelly Hall", "Hancock Center", "McCann Center", "Cannavino Library", "Chapel", "McCormick Hall",
+          "Steel Plant Studios and Gallery", "Science and Allied Health Building", "Dyson Center"]
+
 locations = 0
 count = 0
+
+#Intro Function
+def intro():
+    print("Marist Virtual Tour")
+    print("Hello everyone! Welcome to Marist College. I'll be your tour guide as I show you some of our locations here on campus. Enjoy the tour.")
+
+#Closing Function   
+def closing():
+    print('''Thank you everyone for visiting Marist College. I hope you enjoyed
+the tour and consider applying to Marist College. Goodbye!''')
+
+#Continue Function
+def prompt():
+    c = "Press enter to continue: "
+    print(input(c))
+    
+#Visit Function
 def visit(x):
     global locations
     global count
     locations = x
     count = count + 1
+
+#Move function
+def move():
+    global locations
+    global count
+    print(places[locations])
+    print("You have visited", count, "locations.")
+          
+#Main function 
 def main():
     global locations
     global count
+    
     #Title and Introduction
-    i1 = "Marist Virtual Tour" 
-    i2 = "Hello everyone! Welcome to Marist College. I'll be your tour guide as I show you some of our locations here on campus. Enjoy the tour."
-    i3 = "Press the enter key to begin the tour: "
-    print(i1)
-    print(i2)
-    print(input(i3))
+    intro()
+    prompt()
     
     #Location 1 - Student Center
     visit(0)
     print()
-    s1 = "Murray Student Center"
-    s2 = "Press the enter key for information on the dorms next to the Student Center: "
-    s3 = "Press the enter key to go to the next location: "
-    print(s1)
+    move()
+    s1 = "Press the enter key for information on the dorms next to the Student Center: "
     print(descriptions[locations])
-    print(input(s2))
+    print(input(s1))
     print(details[locations])
-    print(input(s3))
+    prompt()
     
     #Location 2 - Donnelly Hall
     visit(1)
     print()
-    d1 = "Donnelly Hall"
-    d2 = "Press the enter key for a list of the other services: "
-    d3 = "Press the enter key to go to the next location: "
-    print(d1)
+    move()
+    d1 = "Press the enter key for a list of the other services: "
     print(descriptions[locations])
-    print(input(d2))
+    print(input(d1))
     print(details[locations])
-    print(input(d3))
+    prompt()
     
     #Location 3 - Hancock Center
     visit(2)
     print()
-    h1 = "Hancock Center"
+    move()
     h2 = "Press the enter key for a list of some of our Study Abroad locations: "
-    h3 = "Press the enter key to go to the next location: "
-    print(h1)
     print(descriptions[locations])
     print(input(h2))
     print(details[locations])
-    print(input(h3))
+    prompt()
     
     #Location 4 - McCann Center
     visit(3)
     print()
-    m1 = "McCann Center"
-    m2 = "Press the enter key for a list sports we have here: "
-    m3 = "Press the enter key to go to the next location: "
-    print(m1)
+    move()
+    m1 = "Press the enter key for a list sports we have here: "
     print(descriptions[locations])
-    print(input(m2))
+    print(input(m1))
     print(details[locations])
-    print(input(m3))
+    prompt()
     
     #Location #5 - Cannavino Library
     visit(4)
     print()
-    c1 = "Cannavino Library"
-    c2 = "Press the enter key for information on the digital library: "
-    c3 = "Press the enter key to go to the next location: "
-    print(c1)
+    move()
+    c1 = "Press the enter key for information on the digital library: "
     print(descriptions[locations])
-    print(input(c2))
+    print(input(c1))
     print(details[locations])
-    print(input(c3))
+    prompt()
     
     #Location #6 - The Chapel
     visit(5)
     print()
-    ch1 = "The Chapel"
-    ch2 = "Press the enter key for information on our spirit groups: "
-    ch3 = "Press the enter key to go to the next location: "
-    print(ch1)
+    move()
+    ch1 = "Press the enter key for information on our spirit groups: "
     print(descriptions[locations])
-    print(input(ch2))
+    print(input(ch1))
     print(details[locations])
-    print(input(ch3))
+    prompt()
     
     #Location #7 - McCormick Hall
     visit(6)
     print()
-    mc1 = "McCormick Hall"
-    mc2 = "Press the enter key for a list of our food options: "
-    mc3 = "Press the enter key to go to the next location: "
-    print(mc1)
+    move()
+    mc1 = "Press the enter key for a list of our food options: "
     print(descriptions[locations])
-    print(input(mc2))
+    print(input(mc1))
     print(details[locations])
-    print(input(mc3))
+    prompt()
     
     #Location 8 - Steel Plant Studios and Gallery
     visit(7)
     print()
-    sp1 = "Steel Plant Studios and Gallery"
-    sp2 = "Press the enter key for more information on the Art Gallery: "
-    sp3 = "Press the enter key to go to the next location: "
-    print(sp1)
+    move()
+    sp1 = "Press the enter key for more information on the Art Gallery: "
     print(descriptions[locations])
-    print(input(sp2))
+    print(input(sp1))
     print(details[locations])
-    print(input(sp3))
+    prompt()
     
     #Location 9 - Science and Allied Health Building
     visit(8)
     print()
-    sc1 = "Science and Allied Health Building"
-    sc2 = "Press the enter key for information on our Physician Assist Program: "
-    sc3 = "Press the enter key to go to the last location: "
-    print(sc1)
+    move()
+    sc1 = "Press the enter key for information on our Physician Assist Program: "
     print(descriptions[locations])
-    print(input(sc2))
+    print(input(sc1))
     print(details[locations])
-    print(input(sc3))
+    prompt()
     
     #Location 10 - Dyson Center
     visit(9)
     print()
-    dy1 = "Dyson Center"
-    dy2 = "Press the enter key for a list of our teacher education programs: "
-    dy3 = "Press the enter key to end the tour: "
-    print(dy1)
+    move()
+    dy1 = "Press the enter key for a list of our teacher education programs: "
     print(descriptions[locations])
-    print(input(dy2))
+    print(input(dy1))
     print(details[locations])
-    print(input(dy3))
+    prompt()
     
     #Closing
     print()
-    print("You have visited", count, "locations.")
-    cl = ('''Thank you everyone for visiting Marist College. I hope you enjoyed
-the tour and consider applying to Marist College. Goodbye!''')
-    print(cl)
+    closing()
 
 
 main()
