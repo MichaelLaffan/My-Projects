@@ -1,4 +1,4 @@
-# main function
+#Marist Virtual Tour
 
 descriptions = [('''Our first location here is the Murray Student Center. This location   
 serves as the center point of the college. It brings together all
@@ -89,18 +89,23 @@ def prompt():
     print(input(c))
     
 #Visit Function
-def visit(x):
+def visit(x, y):
     global locations
     global count
     locations = x
-    count = count + 1
+    count = y
 
 #Move function
 def move():
     global locations
     global count
+    print()
     print(places[locations])
     print("You have visited", count, "locations.")
+    print()
+    print(descriptions[locations])
+    print()
+    
           
 #Main function 
 def main():
@@ -110,107 +115,84 @@ def main():
     #Title and Introduction
     intro()
     prompt()
-    
-    #Location 1 - Student Center
-    visit(0)
-    print()
-    move()
-    s1 = "Press the enter key for information on the dorms next to the Student Center: "
-    print(descriptions[locations])
-    print(input(s1))
-    print(details[locations])
-    prompt()
-    
-    #Location 2 - Donnelly Hall
-    visit(1)
-    print()
-    move()
-    d1 = "Press the enter key for a list of the other services: "
-    print(descriptions[locations])
-    print(input(d1))
-    print(details[locations])
-    prompt()
-    
-    #Location 3 - Hancock Center
-    visit(2)
-    print()
-    move()
-    h2 = "Press the enter key for a list of some of our Study Abroad locations: "
-    print(descriptions[locations])
-    print(input(h2))
-    print(details[locations])
-    prompt()
-    
-    #Location 4 - McCann Center
-    visit(3)
-    print()
-    move()
-    m1 = "Press the enter key for a list sports we have here: "
-    print(descriptions[locations])
-    print(input(m1))
-    print(details[locations])
-    prompt()
-    
-    #Location #5 - Cannavino Library
-    visit(4)
-    print()
-    move()
-    c1 = "Press the enter key for information on the digital library: "
-    print(descriptions[locations])
-    print(input(c1))
-    print(details[locations])
-    prompt()
-    
-    #Location #6 - The Chapel
-    visit(5)
-    print()
-    move()
-    ch1 = "Press the enter key for information on our spirit groups: "
-    print(descriptions[locations])
-    print(input(ch1))
-    print(details[locations])
-    prompt()
-    
-    #Location #7 - McCormick Hall
-    visit(6)
-    print()
-    move()
-    mc1 = "Press the enter key for a list of our food options: "
-    print(descriptions[locations])
-    print(input(mc1))
-    print(details[locations])
-    prompt()
-    
-    #Location 8 - Steel Plant Studios and Gallery
-    visit(7)
-    print()
-    move()
-    sp1 = "Press the enter key for more information on the Art Gallery: "
-    print(descriptions[locations])
-    print(input(sp1))
-    print(details[locations])
-    prompt()
-    
-    #Location 9 - Science and Allied Health Building
-    visit(8)
-    print()
-    move()
-    sc1 = "Press the enter key for information on our Physician Assist Program: "
-    print(descriptions[locations])
-    print(input(sc1))
-    print(details[locations])
-    prompt()
-    
-    #Location 10 - Dyson Center
-    visit(9)
-    print()
-    move()
-    dy1 = "Press the enter key for a list of our teacher education programs: "
-    print(descriptions[locations])
-    print(input(dy1))
-    print(details[locations])
-    prompt()
-    
+
+    #Loop
+    while True:
+        #Location 1 - Student Center
+        visit(0, 1)
+        move()
+        input("Press the enter key for information on the dorms next to the Student Center: ")
+        print(details[locations])
+        prompt()
+        
+        #Location 2 - Donnelly Hall
+        visit(1, 2)
+        move()
+        input("Press the enter key for a list of the other services: ")
+        print(details[locations])
+        prompt()
+        
+        #Location 3 - Hancock Center
+        visit(2, 3)
+        move()
+        input("Press the enter key for a list of some of our Study Abroad locations: ")
+        print(details[locations])
+        prompt()
+        
+        #Location 4 - McCann Center
+        visit(3, 4)
+        move()
+        input("Press the enter key for a list sports we have here: ")
+        print(details[locations])
+        prompt()
+        
+        #Location #5 - Cannavino Library
+        visit(4, 5)
+        move()
+        input("Press the enter key for information on the digital library: ")
+        print(details[locations])
+        prompt()
+        
+        #Location #6 - The Chapel
+        visit(5, 6)
+        move()
+        input("Press the enter key for information on our spirit groups: ")
+        print(details[locations])
+        prompt()
+        
+        #Location #7 - McCormick Hall
+        visit(6, 7)
+        move()
+        input("Press the enter key for a list of our food options: ")
+        print(details[locations])
+        prompt()
+        
+        #Location 8 - Steel Plant Studios and Gallery
+        visit(7, 8)
+        move()
+        input("Press the enter key for more information on the Art Gallery: ")
+        print(details[locations])
+        prompt()
+        
+        #Location 9 - Science and Allied Health Building
+        visit(8, 9)
+        move()
+        input("Press the enter key for information on our Physician Assist Program: ")
+        print(details[locations])
+        prompt()
+        
+        #Location 10 - Dyson Center
+        visit(9, 10)
+        move()
+        input("Press the enter key for a list of our teacher education programs: ")
+        print(details[locations])
+        prompt()
+
+        #End of Tour
+        quit = input("Press Q to end the tour. Otherwise, it will restart: ").upper()
+        if quit == "Q":
+            break
+             
     #Closing
     print()
     closing()
