@@ -70,6 +70,7 @@ Psychology and Initial Teaching Certification.''')]
 places = ["Murray Student Center", "Donnelly Hall", "Hancock Center", "McCann Center", "Cannavino Library", "Chapel", "McCormick Hall",
           "Steel Plant Studios and Gallery", "Science and Allied Health Building", "Dyson Center"]
 
+
 locations = 0
 count = 0
 
@@ -89,16 +90,16 @@ def prompt():
     print(input(c))
     
 #Visit Function
-def visit(x, y):
+def visit(x):
     global locations
     global count
     locations = x
-    count = y
+    count = count + 1
 
 #Move function
 def move():
     global locations
-    global count
+    global count 
     print()
     print(places[locations])
     print("You have visited", count, "locations.")
@@ -115,83 +116,24 @@ def main():
     #Title and Introduction
     intro()
     prompt()
-
+    visit(0)
+    
     #Loop
     while True:
-        #Location 1 - Student Center
-        visit(0, 1)
         move()
-        input("Press the enter key for information on the dorms next to the Student Center: ")
+        input("Press the enter key for more information: ")
         print(details[locations])
         prompt()
-        
-        #Location 2 - Donnelly Hall
-        visit(1, 2)
-        move()
-        input("Press the enter key for a list of the other services: ")
-        print(details[locations])
-        prompt()
-        
-        #Location 3 - Hancock Center
-        visit(2, 3)
-        move()
-        input("Press the enter key for a list of some of our Study Abroad locations: ")
-        print(details[locations])
-        prompt()
-        
-        #Location 4 - McCann Center
-        visit(3, 4)
-        move()
-        input("Press the enter key for a list sports we have here: ")
-        print(details[locations])
-        prompt()
-        
-        #Location #5 - Cannavino Library
-        visit(4, 5)
-        move()
-        input("Press the enter key for information on the digital library: ")
-        print(details[locations])
-        prompt()
-        
-        #Location #6 - The Chapel
-        visit(5, 6)
-        move()
-        input("Press the enter key for information on our spirit groups: ")
-        print(details[locations])
-        prompt()
-        
-        #Location #7 - McCormick Hall
-        visit(6, 7)
-        move()
-        input("Press the enter key for a list of our food options: ")
-        print(details[locations])
-        prompt()
-        
-        #Location 8 - Steel Plant Studios and Gallery
-        visit(7, 8)
-        move()
-        input("Press the enter key for more information on the Art Gallery: ")
-        print(details[locations])
-        prompt()
-        
-        #Location 9 - Science and Allied Health Building
-        visit(8, 9)
-        move()
-        input("Press the enter key for information on our Physician Assist Program: ")
-        print(details[locations])
-        prompt()
-        
-        #Location 10 - Dyson Center
-        visit(9, 10)
-        move()
-        input("Press the enter key for a list of our teacher education programs: ")
-        print(details[locations])
-        prompt()
+        visit(locations + 1)
 
         #End of Tour
-        quit = input("Press Q to end the tour. Otherwise, it will restart: ").upper()
-        if quit == "Q":
-            break
+        if locations == 10:
+            quit = input("Press Q to end the tour. Otherwise, it will restart: ").upper()
+            if quit == "Q":
+                break
+            else:
+                locations = 0
+                count = 1
              
     #Closing
     print()
