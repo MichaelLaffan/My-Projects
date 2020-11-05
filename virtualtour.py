@@ -106,7 +106,15 @@ def move():
     print()
     print(descriptions[locations])
     print()
-    
+    input("Press the enter key for more information: ")
+    print(details[locations])
+
+#Command Function
+def command():
+    while True:
+        n = str(input("Enter a command: ").lower())
+        if len(n) > 0:
+            return n
           
 #Main function 
 def main():
@@ -121,9 +129,7 @@ def main():
     #Loop
     while True:
         move()
-        input("Press the enter key for more information: ")
-        print(details[locations])
-        prompt()
+        cmd = command()
         visit(locations + 1)
 
         #End of Tour
