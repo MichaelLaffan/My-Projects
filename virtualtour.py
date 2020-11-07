@@ -128,8 +128,12 @@ def main():
     
     #Loop
     while True:
-        move()
         cmd = command()
+        if cmd.isdigit():
+            locations = int(cmd) - 1
+            move()
+        else:
+            print("You must enter a valid command.")
         visit(locations + 1)
 
         #End of Tour
