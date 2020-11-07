@@ -67,17 +67,23 @@ care in a variety of settings such as in the operating and emergency room.'''), 
 Adolescence Education program, Special Education program, and M.A.s in Education
 Psychology and Initial Teaching Certification.''')]
 
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 places = ["Murray Student Center", "Donnelly Hall", "Hancock Center", "McCann Center", "Cannavino Library", "Chapel", "McCormick Hall",
           "Steel Plant Studios and Gallery", "Science and Allied Health Building", "Dyson Center"]
 
 
 locations = 0
 count = 0
+commands = "Here are a list of valid commands: 'help', 'map', 'details', 'quit', or an integer that corresponds to a valid location."
 
 #Intro Function
 def intro():
     print("Marist Virtual Tour")
     print("Hello everyone! Welcome to Marist College. I'll be your tour guide as I show you some of our locations here on campus. Enjoy the tour.")
+    print()
+    print(commands)
+    print()
 
 #Closing Function   
 def closing():
@@ -90,10 +96,8 @@ def prompt():
     print(input(c))
     
 #Visit Function
-def visit(x):
-    global locations
+def visit():
     global count
-    locations = x
     count = count + 1
 
 #Move function
@@ -102,17 +106,20 @@ def move():
     global count 
     print()
     print(places[locations])
+    print()
     print("You have visited", count, "locations.")
     print()
     print(descriptions[locations])
     print()
     input("Press the enter key for more information: ")
+    print()
     print(details[locations])
+    print()
 
 #Command Function
 def command():
     while True:
-        n = str(input("Enter a command: ").lower())
+        n = str.strip((input("Enter a command: ").lower()))
         if len(n) > 0:
             return n
           
@@ -124,22 +131,31 @@ def main():
     #Title and Introduction
     intro()
     prompt()
-    visit(0)
     
     #Loop
     while True:
         cmd = command()
-        if cmd.isdigit():
+        if cmd == "help":
+            print(commands)
+        elif cmd == "map":
+            print("Here are lists of the valid location numbers and names.")
+            print(numbers)
+            print(places)
+        elif cmd == "details":
+            print(details[locations])
+        elif cmd == "quit":
+            break
+        elif cmd.isdigit():
             locations = int(cmd) - 1
+            visit()
             move()
         else:
             print("You must enter a valid command.")
-        visit(locations + 1)
 
         #End of Tour
-        if locations == 10:
-            quit = input("Press Q to end the tour. Otherwise, it will restart: ").upper()
-            if quit == "Q":
+        if locations == 9:
+            q = input("Press Q to end the tour. Otherwise, it will restart: ").upper()
+            if q == "Q":
                 break
             else:
                 locations = 0
