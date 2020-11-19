@@ -161,8 +161,11 @@ def main():
             visit()
             move()
         else:
-           action = log[cmd]
-           action()
+            try:
+               action = log[cmd]
+               action()
+            except:
+                print("Invalid command.")
 
         #End of Tour
         if locations == 9:
