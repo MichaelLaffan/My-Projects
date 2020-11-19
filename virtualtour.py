@@ -156,22 +156,13 @@ def main():
     #Loop
     while True:
         cmd = command()
-        if cmd == "help":
-            print(commands)
-        elif cmd == "map":
-            print("Here are lists of the valid location numbers and names.")
-            print(numbers)
-            print(places)
-        elif cmd == "details":
-            print(details[locations])
-        elif cmd == "quit":
-            break
-        elif cmd.isdigit():
+        if cmd.isdigit():
             locations = int(cmd) - 1
             visit()
             move()
         else:
-            print("You must enter a valid command.")
+           action = log[cmd]
+           action()
 
         #End of Tour
         if locations == 9:
