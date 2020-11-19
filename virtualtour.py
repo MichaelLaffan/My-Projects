@@ -72,7 +72,6 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 places = ["Murray Student Center", "Donnelly Hall", "Hancock Center", "McCann Center", "Cannavino Library", "Chapel", "McCormick Hall",
           "Steel Plant Studios and Gallery", "Science and Allied Health Building", "Dyson Center"]
 
-
 locations = 0
 count = 0
 commands = "Here are a list of valid commands: 'help', 'map', 'details', 'quit', or an integer that corresponds to a valid location."
@@ -100,7 +99,7 @@ def visit():
     global count
     count = count + 1
 
-#Move function
+#Move Function
 def move():
     global locations
     global count 
@@ -111,19 +110,41 @@ def move():
     print()
     print(descriptions[locations])
     print()
-    input("Press the enter key for more information: ")
-    print()
-    print(details[locations])
-    print()
 
 #Command Function
 def command():
     while True:
-        n = str.strip((input("Enter a command: ").lower()))
+        n = input("Enter a command: ").lower()
+        n.strip()
         if len(n) > 0:
             return n
-          
-#Main function 
+
+#Help Command Function
+def showHelp():
+    print(commands)
+
+#Map Command Function
+def showMap():
+    print(numbers)
+    print(places)
+
+#Details Command Function
+def showDetails():
+    print(details[locations])
+
+#Quit Command Function
+def quitTour():
+    closing()
+    quit()
+
+log = {
+    'help': showHelp,
+    'map': showMap,
+    'details': showDetails,
+    'quit': quitTour
+    }
+
+#Main Function 
 def main():
     global locations
     global count
