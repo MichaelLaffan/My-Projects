@@ -1,5 +1,13 @@
 #Marist Virtual Tour
 
+class Location:
+    def _init_(self, name, description, details):
+        self.name = name
+        self.description = description
+        self.details = details
+
+
+
 descriptions = [('''Our first location here is the Murray Student Center. This location   
 serves as the center point of the college. It brings together all
 the members of Marist College. It provides various student services
